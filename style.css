@@ -1,0 +1,406 @@
+/* Css reset  */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+
+/* css variables  */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+#navbar {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    height: 50px;
+    justify-content: space-between;
+}
+
+/*Navbar: Logo  */
+#logo h1 {
+    font-size: 2rem;
+    height: 72px;
+    margin-top: 8px;
+    margin-left: 24px;
+    color: white;
+}
+
+/* Navbar: list styling  */
+#navbar ul {
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    margin-right: 50px;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-left: 50px;
+    text-decoration: none;
+}
+
+#navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    transition: 0.2s;
+    color: rgb(158, 158, 158);
+}
+
+/* Home section  */
+#home {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    background: url('homebg.jpg') center;
+    height: 70vh;
+}
+
+.h-primary-home {
+    font-size: 3rem;
+    margin-top: 50px;
+}
+
+#home p{
+    font-size: 1.3rem;
+    width: 70%;
+    color: rgb(255, 255, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.btn {
+    color: rgb(0, 0, 0);
+    padding: 6px 20px;
+    margin-top: 10px;
+    font-size: 1.3rem;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    transition: 0.3s;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+
+}
+
+/* services section  */
+#services-container {
+    margin-top: 150px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: rgba(243, 244, 245, 0.788);
+    border-radius: 25px;
+}
+
+#services {
+    display: flex;
+    margin: 34px;
+    /* width: 500px; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.first-heading{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 3rem;
+}
+.h-primary {
+    font-size: 1.5rem;
+    display: flex;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: italic;
+    padding-top: 50px;
+    margin-left: 50px;
+}
+
+#services .box {
+    background-color: white;
+    border-radius: 25px;
+    margin: 15px;
+    width: 380px;
+    height: 400px;
+    padding: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    text-align: center;
+}
+
+.box img {
+    justify-content: center;
+    border-radius: 25px;
+    width: 300px;
+    height: 170px;
+    object-fit: cover;
+}
+
+.h-primary-services2 {
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    font-style: italic;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.box ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.box ul li {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+.rup {
+    font-size: 1.4rem;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.671);
+}
+
+.Det {
+    margin-top: 15px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid black;
+    color: black;
+    margin: 15px 85px;
+    padding: 5px 0px;
+    border-radius: 8px;
+}
+
+.Det:hover {
+    background-color: black;
+    color: white;
+    transition: 0.2s;
+}
+
+/* Client section  */
+
+#client-container {
+    margin-top: 0px;
+}
+
+#clients {
+    height: 371px;
+}
+
+.h-primary-clients {
+    color: rgb(0, 0, 0);
+    font-size: 3rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.client-box {
+    background-color: rgba(255, 255, 255, 0.664);
+    height: 250px;
+    color: rgb(0, 0, 0);
+    margin: 25px;
+    margin-top: 40px;
+    padding: 46px;
+    font-size: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 300px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    border-radius: 10px;
+}
+
+.client-box img {
+    border-radius: 55px;
+    height: 100px;
+}
+
+.client-container-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+/* contact section  */
+#contact {
+    background-color: rgba(243, 247, 247, 0.603);
+}
+
+.h-primary-contact {
+    margin-top: 100px;
+    color: rgb(0, 0, 0);
+    font-size: 3rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#contactbox {
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#contact form {
+    font-size: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0px 100px;
+    padding: 5px;
+}
+
+form input {
+    font-size: 1rem;
+    width: 250px;
+    padding: 5px 5px;
+    border: 1px solid rgba(0, 0, 0, 0.247)
+}
+
+.btn1 {
+    color: rgb(255, 255, 255);
+    padding: 7px 13px;
+    background-color: black;
+    margin-top: 10px;
+    border: 2px solid rgb(255, 255, 255);
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.btn1:hover {
+    transition: 0.2s;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-color: black;
+}
+
+#msg {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(8, 176, 8);
+
+}
+
+
+.namal {
+    display: flex;
+    margin-top: 50px;
+    gap: 50px;
+}
+
+.phodress {
+    display: flex;
+    margin-top: 20px;
+}
+
+.phodress {
+    display: flex;
+    gap: 50px;
+}
+
+.namehead {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.emailhead {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.phonehead {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.addresshead {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.msg {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.msg textarea {
+    padding: 5px;
+    border: 1px solid rgba(92, 90, 90, 0.315);
+    font-size: 1rem;
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    color: rgb(228, 228, 228);
+    text-align: center;
+}
+
+/* animations in the webapp  */
+
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translate(-100%);
+    transition: all 1s;
+}
+
+.hidden2 {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translate(100%);
+    transition: all 1s;
+
+}
+
+.hidden3 {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(100%);
+    transition: all 1s;
+}
+
+.hidden4 {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translate(0);
+}
